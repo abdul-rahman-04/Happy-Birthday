@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Jii 💖</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Cinzel+Decorative:wght@400;700&family=Satisfy&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="Happy_Birthday_-_Anirudh_Ravichander.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Stars canvas -->
+<canvas id="starsCanvas"></canvas>
+
+<!-- Floating petals -->
+<div id="petals-container"></div>
+
+<!-- ✨ Intro Screen -->
+<div id="intro">
+  <div class="intro-glow"></div>
+  <div class="centerBox">
+    <div class="intro-sparkle">✦</div>
+    <p id="text"></p>
+    <button id="nextBtn">Continue ✦</button>
+  </div>
+</div>
+
+<!-- 🌸 Main Content -->
+<div id="mainContent">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-lines">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="hero-inner">
+      <p class="hero-label">✦ A birthday celebration for ✦</p>
+      <h1 class="title">Happy Birthday</h1>
+      <h2 class="name">Amirthavarshini</h2>
+      <div class="heart-line">
+        <span class="pulse-heart">♥</span>
+        <span class="thin-line"></span>
+        <span class="pulse-heart delay">♥</span>
+      </div>
+      <p id="typing" class="intro-text"></p>
+      <button onclick="showSurprise()" class="btn">
+        <span class="btn-inner">Open Your Surprise ✦</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Memories Section -->
+  <section id="surprise" class="hidden">
+    <div class="section-header">
+      <p class="section-sub">moments that matter</p>
+      <h2 class="memory-title">Your Beautiful Story</h2>
+      <div class="title-divider"><span>✦</span></div>
+    </div>
+
+    <div class="gallery">
+
+      <div class="card" style="--d:0">
+        <div class="card-img-wrap">
+          <img src="01.jpeg" alt="Family">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Where love lives ❤️</h3>
+          <p>Some people are born into families. You were born into a home full of warmth — and you carry that warmth everywhere you go.</p>
+        </div>
+      </div>
+
+      <div class="card" style="--d:1">
+        <div class="card-img-wrap">
+          <img src="Screenshot 2024-11-15 180522.png" alt="You">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Just being you ✨</h3>
+          <p>You have this rare ability to make a room feel softer the moment you walk in. Not everyone can do that — but you always have.</p>
+        </div>
+      </div>
+
+      <div class="card" style="--d:2">
+        <div class="card-img-wrap">
+          <img src="03.jpeg" alt="Friends">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Three souls, one bond 🫶</h3>
+          <p>These are the kind of friendships people write about — the ones that understand you without needing a single explanation.</p>
+        </div>
+      </div>
+
+      <div class="card" style="--d:3">
+        <div class="card-img-wrap">
+          <img src="02.jpeg" alt="Friends group">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>The ones who stayed 👊</h3>
+          <p>College gave us a lot of things. But the best thing it ever gave us was each other — and those memories will never fade.</p>
+        </div>
+      </div>
+
+      <div class="card" style="--d:4">
+        <div class="card-img-wrap">
+          <img src="05 (2).jpeg" alt="Queens">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Radiance, together 👑</h3>
+          <p>Life is more colourful when you get to share it with people who genuinely celebrate you. You deserve all of that colour.</p>
+        </div>
+      </div>
+
+      <div class="card" style="--d:5">
+        <div class="card-img-wrap">
+          <img src="06.jpeg" alt="New chapter">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-body">
+          <h3>Your next adventure 🚀</h3>
+          <p>Everything you have been — the quiet strength, the gentle heart — is exactly what your next chapter needs. You are more than ready.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Gift section -->
+    <div class="gift-container">
+      <p class="gift-text">One last thing, just for you...</p>
+      <div class="gift" onclick="openGift()">
+        <span class="gift-icon">🎁</span>
+        <span class="gift-ring"></span>
+        <span class="gift-ring ring2"></span>
+      </div>
+      <p class="gift-hint">Tap to open</p>
+    </div>
+
+  </section>
+
+</div><!-- end mainContent -->
+
+<!-- 💌 Popup -->
+<div id="popup" class="popup hidden">
+  <div class="popup-backdrop" onclick="closePopup()"></div>
+  <div class="popup-box">
+    <div class="popup-stars">✦ ✦ ✦</div>
+    <h2 class="popup-title">A letter for you</h2>
+    <div class="popup-divider"></div>
+
+    <p class="popup-text">
+      There are people who exist in this world like a quiet, steady light — not loud, not demanding, just… there, making everything around them a little warmer. You are one of those people, Amirr.
+    </p>
+    <p class="popup-text">
+      You carry something rare inside you — a softness that doesn't break, a kindness that never asks for anything in return. You feel things deeply, and instead of letting that hurt you, you use it to care for others. That is not something everyone can do.
+    </p>
+    <p class="popup-text">
+      The people around you are lucky — even if they don't say it often enough. I hope today, on your birthday, you feel just how much you matter. Not for what you do, but simply for who you are.
+    </p>
+
+    <p class="popup-ending">
+      Happy Birthday, Amirr Jii 🎂<br>
+      <span>Stay exactly as you are — the world needs more of you.</span>
+    </p>
+
+    <p class="popup-sign">— From someone who truly sees you 💖</p>
+
+    <button class="popup-close" onclick="closePopup()">Close ✦</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
