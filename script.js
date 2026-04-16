@@ -71,14 +71,15 @@
 /* ===== INTRO MESSAGES ===== */
 document.addEventListener('DOMContentLoaded', function () {
   const messages = [
-    "Heyyy Jii... today is April 19th — your birthday 🌸",
-    "And I really wanted to make it feel like more than just a normal day 💖",
-    "You always carry so much inside you, yet somehow you still show up for everyone else...",
-    "I don't think you fully see how much light you bring into the lives around you.",
-    "But I do. And I wanted today to remind you of that 🥹",
-    "So I made something — just for you.",
-    "Something small, but full of everything I couldn't just say out loud...",
-    "This one's for you, Jii ❤️"
+    "Heyyy Jii... Innaiku April 19th ah? 👀",
+    "A day that gave me one of the special person in my life 💖",
+    "I really wanted to make it feel a little more special than usual..",
+    "Even with all the thoughts you carry, you still manage to make others feel okay.",
+    "I don’t think you realize how much you mean to people around you...",
+    "But I do.. And I wanted today to remind you of that 🥹",
+    "I don’t want this day to be just another, ‘ Happy Birthday ’...",
+    "So I made something different this time — just for you.",
+    "And yeah… This one's for you, Jii ❤️"
   ];
 
   let index = 0, charIndex = 0;
@@ -126,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ===== HERO TYPING EFFECT ===== */
-const heroText = "Today, the world is celebrating the day you were born — and so am I. You are someone who makes ordinary moments feel like they matter, who gives more than you ever take, and who carries a grace that most people spend a lifetime trying to find. This little corner of the internet exists just for you, today. 💫";
+const heroText = "Today isn’t just another day on the calendar — it's the day the world was blessed with someone truly amazing and that's you. ( But… attitude mattum raani level… behavior la innum kulanthai thaan 🤡😂 ).Small small moments join together to make the life…… And you make those moments unforgettable. Click around, explore pannitu enjoy pannunga 😉Because today is all about YOU.";
 
 function startTyping() {
   let i = 0;
