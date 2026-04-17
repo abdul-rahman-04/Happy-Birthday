@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     "Even with all the thoughts you carry, you still manage to make others feel okay.",
     "I don’t think you realize how much you mean to people around you...",
     "But I do.. And I wanted today to remind you of that 🥹",
-    "I don’t want this day to be just another, ‘ Happy Birthday ’...",
+    "I don’t want this day to be just another ..., ‘ Happy Birthday ’",
     "So I made something different this time — just for you.",
     "And yeah… This one's for you, Jii ❤️"
   ];
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ===== HERO TYPING EFFECT ===== */
-const heroText = "Today isn’t just another day on the calendar — it's the day the world was blessed with someone truly amazing and that's you. ( But… attitude mattum raani level… behavior la innum kulanthai thaan 🤡😂 ).Small small moments join together to make the life…… And you make those moments unforgettable. Click around, explore pannitu enjoy pannunga 😉Because today is all about YOU.";
+const heroText = "Today isn’t just another day on the calendar — it's the day the world was blessed with someone truly amazing and that's you. ( Attitude mattum raani level 👑… behavior la innum kulanthai thaan 🤡😂 ). Small small moments join together to make this life beautiful…… And you make those moments unforgettable. Click around, explore pannitu enjoy pannunga.. Because today is all about YOU 🤍.";
 
 function startTyping() {
   let i = 0;
