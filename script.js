@@ -74,12 +74,12 @@ document.addEventListener('DOMContentLoaded', function () {
     "Heyyy Jii... Innaiku April 19th ah? 👀",
     "A day that gave me one of the special person in my life 💖",
     "I really wanted to make it feel a little more special than usual..",
-    "Even with all the thoughts you carry, you still manage to make others feel okay.",
+    "Even with all the thoughts you carry, you still manage to make others feel okay 🫰.",
     "I don’t think you realize how much you mean to people around you...",
-    "But I do.. And I wanted today to remind you of that 🥹",
-    "I don’t want this day to be just another ....., ‘ Happy Birthday ’",
+    "But I do... And I wanted today to remind you of that ✨",
+    "I don’t want this day to be just another .., ‘ Happy Birthday ’",
     "So I made something different this time — just for you.",
-    "And yeah… This one's for you, Jii ❤️"
+    "And yeah… This one's for you, Amirthu ❤️"
   ];
 
   let index = 0, charIndex = 0;
